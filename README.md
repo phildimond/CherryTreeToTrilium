@@ -10,7 +10,7 @@ First, export your CherryTree notes as follows:
 
 2. In CherryTree, select ***File*** then ***Save As***. The window below will appear.
 
-   ![](/home/phillip/source/Python/CherryTreeToTrilium/Assets/CherryTreeSaveAs.png)
+   ![](./Assets/CherryTreeSaveAs.png)
 
 3. Make sure you select the ***Single SQLite File (.ctb)*** option, then Click ***OK***.
 
@@ -32,11 +32,11 @@ Finally, import into Trilium:
 
 1. Right-click on the Note you want to import into, then select the ***Import into Note*** option:
 
-    ![](/home/phillip/source/Python/CherryTreeToTrilium/Assets/TriliumImportMenu.png)
+    ![](./Assets/TriliumImportMenu.png)
 
 2. A large (and rather complicated) dialog will appear, as below. Don't panic, the selections are simple!
 
-   ![](/home/phillip/source/Python/CherryTreeToTrilium/Assets/TriliumImportDialog.png)
+   ![](./Assets/TriliumImportDialog.png)
 
 3. ***Make sure you turn off the Compress Images option***, unless you really want it. It will degrade the appearance of nay images you have in notes!
 
@@ -85,5 +85,3 @@ I created this, with a lot of AI help, for my own purposes. It migrated my very 
 ## Errors
 
 If you put Trilium behind the Synology reverse proxy and the import fails with an “entity too large” (HTTP 413) error, the proxy’s upload size limit is too small for the ZIP. Importing directly on the container’s port avoids it.
-
-
