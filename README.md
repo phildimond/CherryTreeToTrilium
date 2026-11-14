@@ -1,6 +1,6 @@
 # CherryTree to Trilium Converter
 
-This Python script converts a CherryTree note tree to a format that can be directly imported into Trilium. It preserves the hierachy and images, attached files and the formatting inside notes.
+This Python script converts a CherryTree note tree to a format that can be directly imported into Trilium. It preserves the hierachy and images, attached files and the formatting inside notes. Built with a *lot* of help from Claude AI.
 
 ## How to Use
 
@@ -16,6 +16,8 @@ First, export your CherryTree notes as follows:
 
 4. Select a location and name for the file, then click ***Save***.
 
+If you're clever and you already have yourt notes in an SQLite format, then of course you can still use it - unless you have your notes encrypted, in which case you'll still need to follow this procedure to save them without encryption. If you do use an existing ctd, please at least use a copy in case something goes bad.
+
 Now, open a command window and use the following syntax to convert the file to one that Trilium can understand:
 
 ```
@@ -24,7 +26,7 @@ python3 cherrytree2trilium.py CherryTreeNotesFile.ctb [-o out.zip]
 
 where:
 
-- *CherryTreeNotesFile.ctb* is the file you saved from CherryTree in the steps above.
+- *CherryTreeNotesFile.ctb* is the file you saved from CherryTree in the steps above. 
 
 - *-o out.zip* is an optional parameter that specifies an output file name. If you don't enter this, the output file will have the same name as the input file (with a .zip extension) and be placed in the directory you're currently working in.
 
@@ -40,7 +42,9 @@ Finally, import into Trilium:
 
 3. ***Make sure you turn off the Compress Images option***, unless you really want it. It will degrade the appearance of nay images you have in notes!
 
-4. Simply select the big ***Drag and drop files here, or click to browse*** button and select the .zip file you created with the converter script, or drag and drop it if that's your thing!
+4. Leave *safe import* on to make sure any nasties don't get in.
+
+5. Simply select the big ***Drag and drop files here, or click to browse*** button and select the .zip file you created with the converter script, or drag and drop it if that's your thing!
 
 The notes should import as a tree under the note you selected. That simple!
 
